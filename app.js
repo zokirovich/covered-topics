@@ -10,5 +10,8 @@ link.setAttribute('href','https://www.yandex.uz')
 link.textContent = 'Go To Yandex main page'
 
 
-const textPoragrof = document.querySelector('p')
-textPoragrof.setAttribute('class','success')
+const textOne = document.querySelector('#title-one')
+const textTwo = document.querySelector('#title-two')
+
+textOne.setAttribute('class', 'success')
+textTwo.setAttribute('class', 'error')
