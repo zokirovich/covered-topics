@@ -1,17 +1,20 @@
-// const textName = document.querySelector('#text')
-// textName.innerHTML = `<b>Assalomu alaykum</b>`
-// textName.textContent =  `<b>Assalomu alaykum</b>`
-// textName.innerHTML = 'Assalomu alaykum'
+// add remove
+const paraText = document.querySelector('p')
+paraText.classList.add('success')
+paraText.classList.remove('error')
 
 
-const link = document.querySelector('a')
-console.log(link.getAttribute('href'))
-link.setAttribute('href','https://www.yandex.uz')
-link.textContent = 'Go To Yandex main page'
+// mashqcha 
+// content ichida success va error so`z bo`ladi shu so`z bo`lgan qatorga success va error classlarini ishlatish lozim
 
-
-const textOne = document.querySelector('#title-one')
-const textTwo = document.querySelector('#title-two')
-
-textOne.setAttribute('class', 'success')
-textTwo.setAttribute('class', 'error')
+const textClass  = document.querySelectorAll('p')
+// console.log(textClass)
+textClass.forEach((text) => {
+  //  console.log(text);
+  if (text.textContent.includes('error')) {
+		text.classList.add('error')
+	}
+	 if (text.textContent.includes('success')) {
+		text.classList.add('successd')
+	}
+})	
